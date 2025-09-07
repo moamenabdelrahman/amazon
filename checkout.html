@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/checkout.css" />
+    <title>Checkout</title>
+  </head>
+  <body style="margin-top: 140px;">
+    <!-- Navbar -->
+    <nav class="navbar bg-white fixed-top">
+      <div class="container-fluid flex-nowrap px-4">
+        <!-- Brand -->
+        <a href="index.html" class="navbar-brand">
+          <img src="images/amazon-logo.png" height="30px">
+        </a>
+        
+        <div class="mx-3 text-center fs-5 fw-bold">
+            Checkout ( <span class="text-primary js-navbar-qnt">0 items</span> )
+        </div>
+
+        <a href="index.html">
+            <img src="images/icons/checkout-lock-icon.png" class="me-1">
+        </a>
+      </div>
+    </nav>
+
+    <div class="main px-4 mx-auto">
+        <div class="row g-2 mb-8">
+            <div class="col-12 fs-4 fw-bold">Review Your Order</div>
+            <div class="col-12 col-lg-4 order-lg-1">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title fs-5 fw-bold">Order Summary</div>
+                        <div class="row justify-content-between mb-1">
+                            <div class="col-auto">Items (<span class="js-summary-items">0</span>):</div>
+                            <div class="col-auto js-totalAmount">$0.00</div>
+                        </div>
+                        <div class="row justify-content-between mb-1">
+                            <div class="col-auto">Shipping & handling:</div>
+                            <div class="col-auto js-shipping">$0.00</div>
+                        </div>
+                        <div class="d-flex justify-content-end mb-2">
+                            <hr class="my-0" style="width: 50px;">
+                        </div>
+                        <div class="row justify-content-between mb-1">
+                            <div class="col-auto">Total before tax:</div>
+                            <div class="col-auto js-total-before-tax">$0.00</div>
+                        </div>
+                        <div class="row justify-content-between mb-1">
+                            <div class="col-auto">Estimated tax (10%):</div>
+                            <div class="col-auto js-estimated-tax">$0.00</div>
+                        </div>
+                        <hr>
+                        <div class="row justify-content-between mb-4 text-danger fw-bold fs-5">
+                            <div class="col-auto">Order total:</div>
+                            <div class="col-auto js-order-total">$0.00</div>
+                        </div>
+                        <button type="button" class="btn btn-warning rounded w-100 text-center fs-7 js-place-order">Place your order</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-8 d-flex flex-column gap-2 js-items-container">
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/checkout.js"></script>
+  </body>
+</html>

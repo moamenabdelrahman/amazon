@@ -1,0 +1,17 @@
+.track-btn:hover {
+    background-color: var(--bs-light);
+}
+
+@media screen and (max-width: 767px) {
+    .track-btn {
+        width: 142px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .track-btn {
+        width: 100%;
+        padding: auto 10px;
+    }
+}
+
